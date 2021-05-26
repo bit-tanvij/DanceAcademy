@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Divne Dance Accademy
+    block scripts
+    block style
+
+  body
+    nav#navbar.navigate 
+      ul
+        div#logo
+          img(src="/static/logo.png")
+          | DDA
+        li #[a(href = "/") Home]
+        li #[a(href = "/") About]
+        li #[a(href = "/") Classes Info]
+        li #[a(href = "/") Services]
+        li #[a(href = "/contact") Contact Us]
+
+    block content
+    footer#foot
+      | Copyright © 2019 DivneDanceAcademy.com | All rights reseverd.

@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    
+    
+
+    section#intro
+      div Welcome to Divne Dance Academy
+      div.small Dance into life
+
+    section#mission
+      h3 Our Mission
+      div.contain
+        div.card 
+          h4 MOTIVATION
+          div.card-box
+            div.card-img
+              img(src="/static/girl.png")
+            div.card-cont
+              p Bring out your dance vibes
+        div.card 
+          h4 AWESOME
+          div.card-box
+            div.card-img
+              img(src="/static/couple.png")
+            div.card-cont
+              p Find passion in your moves
+        div.card 
+          h4 PERFECTION
+          div.card-box
+            div.card-img
+              img(src="/static/boy.png")
+            div.card-cont
+              p Look out for the best in you
+
+    section#sponser
+      h3 Our Sponsers
+      div#sponsers
+        div.sp
+          img(src="/static/youtu.png", alt="sponserIMG", class="spimg")
+        div.sp
+          img(src="/static/apple.png", alt="sponserIMG", class="spimg")
+        div.sp
+          img(src="/static/micro.png", alt="sponserIMG", class="spimg")
+        div.sp
+          img(src="/static/intel.png", alt="sponserIMG", class="spimg")
