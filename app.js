@@ -6,7 +6,7 @@ const app = express();
 const bodyparser = require("body-parser")
 const mongoose = require('mongoose');
 mongoose.connect("mongodb+srv://tanviJ25:Qwerty@1234@cluster0.sopog.mongodb.net/danceDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
-const port = process.env.PORT | 8000;
+const port = process.env.PORT || 8000;
 
 //mongoose schema
 const cntactSchema = new mongoose.Schema({
